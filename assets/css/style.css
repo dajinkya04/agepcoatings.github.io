@@ -27,7 +27,9 @@ body::-webkit-scrollbar-thumb {
   // outline: 1px solid slategrey;
   height:50%;
 }
-
+#svg{
+  cursor: url(https://img.uxwing.com/wp-content/themes/uxwing/download/tools-equipment-construction/paint-bucket-icon.svg), auto;
+}
 a {
   color: #ffc451;
   text-decoration: none;
