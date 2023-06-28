@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Serif:ital@1&family=Playfair+Display:ital@1&family=Poppins:wght@200;300&display=swap');
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -6,7 +7,7 @@ html{
   overflow-x:auto;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+font-family: 'Poppins', sans-serif;
   color: #444444;
 }
 body::-webkit-scrollbar {
@@ -144,23 +145,23 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: linear-gradient(
-    109.6deg,
-    rgb(36, 45, 57) 11.2%,
-    rgb(16, 37, 60) 51.2%,
-    rgb(0, 0, 0) 98.6%
-  );
+  // background: linear-gradient(
+  //   109.6deg,
+  //   rgb(36, 45, 57) 11.2%,
+  //   rgb(16, 37, 60) 51.2%,
+  //   rgb(0, 0, 0) 98.6%
+  // );
+  background:#D0D9DF;
+  height:18%;
+  margin:0
 }
 
-// #header .logo {
-//   font-size: 32px;
-//   margin: 0;
-//   padding: 0;
-//   line-height: 1;
-//   font-weight: 700;
-//   letter-spacing: 2px;
-//   text-transform: uppercase;
-// }
+#header .logo {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  letter-spacing: 0px;
+}
 
 #header .logo a {
   color: #fff;
@@ -171,9 +172,10 @@ h6 {
 }
 
 #header .logo img {
-  height: 100%;
-  width: 16%;
-  padding: 0px;
+  height: auto;
+  width: 20%;
+  bottom:12%;
+
 }
 
 // /*--------------------------------------------------------------
@@ -231,8 +233,8 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
-  font-weight: 600;
-  color: #fff;
+  font-weight: 800;
+  color: #363636;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -248,7 +250,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #f96c00;
+  color: #ED7D39;
 }
 
 .navbar .dropdown ul {
@@ -332,6 +334,7 @@ h6 {
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
+    color:#363636;
   }
 
   .navbar ul {
@@ -437,7 +440,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(16, 37, 60, 0.7);
+  background: rgba(223, 229, 233, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -456,21 +459,23 @@ h6 {
   font-size: 45px;
   font-weight: 700;
   line-height: 55px;
-  color: #fff;
+  color: #363636;
   font-family: "Poppins", sans-serif;
 }
 #hero b {
-  color: #f96c00;
+  color: #363636;
 }
 
 #hero h1 span {
-  color: #ffc451;
+  color: #363636;
 }
 
 #hero h2 {
-  color: rgba(255, 255, 255, 0.9);
+  color: #363636;
   margin: 10px 0 0 0;
   font-size: 20px;
+    font-weight:700;
+
 }
 
 #hero .icon-box {
@@ -521,13 +526,14 @@ h6 {
   }
 
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 25px;
+    line-height: 30px;
   }
 
   #hero h2 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom:20%;
   }
 }
 /*-------------------------------------
@@ -835,7 +841,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #f96c00;
+  background: #ED7D39;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -853,7 +859,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(21, 21, 21, 0.6);
+  // background: rgba(21, 21, 21, 0.);
   position: absolute;
   left: 0;
   right: 0;
@@ -901,18 +907,23 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-links {
   text-align: center;
-  z-index: 4;
+  margin-left:42%;
+  position:absolute;
+  bottom:-7%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
-  margin: 0 5px 0 0;
-  font-size: 28px;
+  color: #000;
+  margin: 25% 10% 0 0;
+  font-weight:500;
+  font-size: 35px;
   display: inline-block;
   transition: 0.3s;
-  font-weight: 800;
 }
-
+.portfolio .portfolio-wrap img{
+  width:50%;
+  height:auto;
+}
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   color: #f96c00;
 }
@@ -922,7 +933,7 @@ section {
 }
 
 .portfolio .portfolio-wrap:hover img {
-  transform: scale(0.8);
+  transform: scale(0.9);
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
@@ -1003,9 +1014,20 @@ section {
 .distributors ul li {
   list-style: none;
   padding-right: 10%;
+  line-height:1;
+
+}
+.distributors h5{
+  line-height:1;
+  font-size:16px;
+}
+.distributors  p{
+  font-weight:650;
+  line-height:0.8;
 }
 .distributors {
   width: 100%;
+
 }
 
 /*--------------------------------------------------------------

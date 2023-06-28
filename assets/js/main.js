@@ -293,3 +293,16 @@
 //   const inputValue = searchInput.value;
 //   alert(inputValue);
 // });
+
+document.addEventListener('DOMContentLoaded', function() {
+	setTimeout(function() {
+	  var popupModal = new bootstrap.Modal(document.getElementById('popupModal'));
+	  popupModal.show();
+  
+	  var closeButton = document.querySelector('.modal btn-close');
+	  closeButton.addEventListener('click', function() {
+		popupModal.hide();
+	  });
+	}, 3000); // 20 seconds
+  });
+  
