@@ -1648,11 +1648,11 @@ section {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 15px;
+  padding-top: 0px;
 }
 
 #footer .credits {
-  padding-top: 10px;
+  padding-top: 0px;
   text-align: center;
   font-size: 13px;
   color: #fff;
